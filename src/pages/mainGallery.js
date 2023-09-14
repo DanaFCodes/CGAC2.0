@@ -10,6 +10,7 @@ function mainGallery() {
       if (audio.paused) audio.play();
       else audio.pause();
     }
+    
   return (
     <>
       <section id="mainGall" className="bg-apricot grid place-items-center">

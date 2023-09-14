@@ -1,49 +1,60 @@
 import Nav from '../../components/Nav'
 import Foot from '../../components/Foot'
+import Image from 'next/image';
 
+// functions
 export default function Home() {
+  // onClick, door redirects to gallery page 
   function enterGallery() {
     const door = document.getElementById("door");
-    // onClick, door redirects to gallery page 
     location.href = 'mainGallery';    
   }
 
   return (
     <>
-      <section id='homePage' className="bg-princeOrange grid place-items-center">
-        <header className="">
-          <section>
+      <section id='homePage' className="bg-princeOrange">
+        <header style={{padding: '5% 5% 2% 5%'}}>
             <Nav />
-          </section>
         </header>
 
         <main className="text-olive">
           <section id="comingUp">
-            <h1 className="text-5xl flex items-center justify-center font-heading pb-5 border-2 align-middle border-green-950 border-3">
-              {/* maybe we can make this a cute thing like a cute designed "join us for..." or somethin */}
-              Come hang out with CGAC!!
-            </h1>
-            <h2 className="mt-8 font-heading ml-20">coming up: </h2>
-            {/* what do we want our bullet point to look like? should link to an instagram post w more info? */}
+            <h2 className="mt-4 mb-4 font-heading text-center mr-64">coming up: </h2>
             <h2 className="text-2xl font-heading text-center">🚨materials exchange🚨</h2>
-            <h2 className="text-2xl font-heading text-center">🚨summer book share🚨</h2>
+            <h2 className="text-2xl font-heading text-center">🚨spring book share🚨</h2>
+            
+            <h1 className="text-5xl flex items-center justify-center font-heading pb-5 mt-8 align-middle border-green-950 border-3">
+            🌱step inside our garden🌱
+            </h1>
           </section>
 
-          <section id="galleryPortal" className="py-10">
-            <h3 className="text-lg flex items-center justify-center mb-5 font-bod">
-              step inside our garden...
-            </h3>
-            <div
-              className="opening-door frame relative z-0 flex items-center justify-center"
+          <section id="galleryPortal" className="py-10 relative">
+              <Image className="opacity-100 hover:opacity-0"
+              src="/landing1.png"
+              width={2200}
+              height={200}
+              alt='Illustration of garden gate'
               onClick={enterGallery}
-            >
-              <button className="door" id="door" onClick={enterGallery}>
-                <div className="handle"></div>
-              </button>
-            </div>
+              />
+
+              {/* <Image className="opacity-0 hover:opacity-100 absolute bottom-8"
+              src="/landing2.png"
+              width={2200}
+              height={200}
+              alt='Illustration of garden gate'
+              onClick={enterGallery}
+              /> */}
+
+              <Image className="opacity-0 hover:opacity-100 absolute bottom-8"
+              src="/landing3.png"
+              width={2200}
+              height={200}
+              alt='Illustration of garden gate'
+              onClick={enterGallery}
+              />
           </section>
         </main>
-        <footer>
+        <footer style={{padding: '5% 5% 2% 5%'}}>
           <Foot />
         </footer>
       </section>

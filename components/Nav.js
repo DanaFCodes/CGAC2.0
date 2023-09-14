@@ -4,6 +4,7 @@ import Link from "next/link";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose, AiFillInstagram, AiOutlineMail } from "react-icons/ai";
+import Image from 'next/image';
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,15 +15,14 @@ function Nav() {
   }
 
   return (
-    <nav id="nav" className="mb-8 font-body ">
+    <nav id="nav" className="font-body">
       <div className="justify-between items-center flex">
         <div id="leftside" className="">
           <Link href="/">
-            <img
-              src="/logo.png"
-              alt="CGAC logo"
-              width="100"
-              height="100"
+            <Image 
+            src="/logo.png"
+            width={100}
+            height={100}
             />
           </Link>
         </div>
@@ -38,12 +38,12 @@ function Nav() {
             <Link href={"/market"}>
               <li className="hover:text-olive">Marketplace</li>
             </Link>
-            <Link href={"/ingen"}>
+            {/* <Link href={"/ingen"}>
               <li className="hover:text-olive">InGen</li>
-            </Link>
-            <Link href={"/archive"}>
+            </Link> */}
+            {/* <Link href={"/archive"}>
               <li className="hover:text-olive">Archive</li>
-            </Link>
+            </Link> */}
             <Link href={"/aboutUs"}>
               <li className="hover:text-olive">About us</li>
             </Link>
@@ -63,14 +63,15 @@ function Nav() {
           <GiHamburgerMenu />
         </div>
       </div>
-      <div className="border-b-2 border-yellow-700"></div>
+      {/* <div className="border-b-2 border-yellow-700"></div> */}
 
       {/* SLIDE OUT NAV */}
       <div
+        id='slideOut'
         className={
           menuOpen
-            ? "absolute z-10 left-0 top-0 w-[65%] md:hidden h-[100%] bg-slate-300 p-10 ease-in duration-100"
-            : "static left[-100%] top-0 p-10 ease-out duration-0"
+          ? "absolute z-10 left-0 top-0 w-[65%] md:hidden h-[100%] bg-violet-100 p-10"
+          : " left[-100%] absolute"
         }
       >
         <div
@@ -106,6 +107,11 @@ function Nav() {
           </div>
         </div>
       </div>
+<Image
+src="/bushDivider2.png"
+width={1500}
+height={100}
+/>
     </nav>
   );
 } 
