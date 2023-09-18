@@ -23,12 +23,13 @@ function Nav() {
             src="/logo.png"
             width={100}
             height={100}
+            alt='CGAC logo'
             />
           </Link>
         </div>
 
         <div id="middle" className="hidden md:flex">
-          <ul className="flex gap-12 text-lg">
+          <ul className="flex md:gap-8 lg:gap-12 sm:text-sm md:text-md lg:text-lg">
             <Link href={"/"}>
               <li className="hover:text-olive">Home</li>
             </Link>
