@@ -11,8 +11,9 @@ function Foot() {
 
   return (
     <>
-      <section id="footer" className="h-30 mt-0">
+      <section id="footer" className="h-30">
         <Image
+        className="-mt-7 md:-mt-2"
         src="/loopDivider.png"
         width={1800}
         height={200}
@@ -21,7 +22,7 @@ function Foot() {
         
         <h3 className="mt-8 md:text-3xl text-xl font-bod w-[100%] text-center md:text-start">➰follow us on Instagram➰</h3>
            
-        <div className="instaImages flex mt-6 w-[100%] justify-start">
+        <div className="instaImages flex mt-3 md:mt-6 w-[100%] justify-start">
           <div className="md:mr-10 mr-4"> 
             <Image
             src={'/poster.png'}
@@ -49,7 +50,7 @@ function Foot() {
         </div>
 
         <div className="flex justify-between flex-wrap" id='bottomDiv'>
-          <div id='contactForm' className="mt-16 sm:content-center">
+          <div id='contactForm' className="mt-10 md:mt-16 sm:content-center">
             <h3 className="md:text-3xl text-xl font-bod text-start">➰stay in the loop➰</h3>
               <form className="footerInput pt-4 flex" action="">
                 <label htmlFor="submit"></label>
@@ -64,21 +65,21 @@ function Foot() {
             <button id='formButton' className="btn btn-animation font-bod  mt-5 ">Submit</button>
           </div>
 
-          <div id='contactUs' className=" justify-between">
-            <h3 className="md:text-3xl text-xl font-bod flex justify-end mt-16">➰contact us➰</h3>
-              <div className="flex items-center sm:justify-start justify-end md:mr-3 mt-5">
+          <div id='contactUs' className="justify-between">
+            <h3 className="md:text-3xl text-xl font-bod flex mt-10 md:mt-16">➰contact us➰</h3>
+              <div className="flex items-center md:mr-3 mt-5">
                 <AiFillInstagram className="scale-150 mr-2 sm:justify-start" />
-                <p>@cgac.workshop</p>
+                <p className="text-sm md:text-md">@cgac.workshop</p>
               </div>
 
-              <div className="flex items-center sm:justify-start justify-end md:mr-3 mt-5">
+              <div className="flex items-center md:mr-3 mt-5">
                 <FaTiktok className="scale-150 mr-2" />
-                <p>@cgac.toronto</p>
+                <p className="text-sm md:text-md">@cgac.toronto</p>
               </div>
 
-              <div className="flex items-center sm:justify-start justify-end md:mr-3 mt-1">
+              <div className="flex items-center text-end md:mr-3 mt-1">
                 <AiOutlineMail className="scale-150 mt-3 mr-2" />
-                <p className="mt-3">cgac.spillthebeans@gmail.com</p>
+                <p className="mt-3 text-sm md:text-md">cgac.spillthebeans@gmail.com</p>
               </div>
           </div>
 

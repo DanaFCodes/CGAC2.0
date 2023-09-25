@@ -18,12 +18,12 @@ export default function Home() {
         </header>
 
         <main className="text-olive">
-          <section id="comingUp">
-            <h2 className="mt-4 mb-4 font-heading text-center mr-64">coming up: </h2>
-            <h2 className="text-2xl font-heading text-center">🚨materials exchange🚨</h2>
-            <h2 className="text-2xl font-heading text-center">🚨spring book share🚨</h2>
+          <section id="comingUp " style={{padding: '5% 5% 2% 5%'}}>
+            <h2 className="mt-4 mb-4 font-heading text-center mr-32 md:mr-64">coming up: </h2>
+            <h2 className="md:text-2xl font-heading text-center">🚨materials exchange🚨</h2>
+            <h2 className="md:text-2xl font-heading text-center">🚨spring book share🚨</h2>
             
-            <h1 className="text-5xl flex items-center justify-center font-heading pb-5 mt-8 align-middle border-green-950 border-3">
+            <h1 className="md:text-5xl text-xl flex items-center justify-center font-heading md:pb-5 mt-8 align-middle border-green-950 border-3">
             🌱step inside our garden🌱
             </h1>
           </section>
@@ -36,14 +36,6 @@ export default function Home() {
               alt='Illustration of garden gate'
               onClick={enterGallery}
               />
-
-              {/* <Image className="opacity-0 hover:opacity-100 absolute bottom-8"
-              src="/landing2.png"
-              width={2200}
-              height={200}
-              alt='Illustration of garden gate'
-              onClick={enterGallery}
-              /> */}
 
               <Image className="opacity-0 hover:opacity-100 absolute bottom-8"
               src="/landing3.png"
