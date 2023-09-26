@@ -32,65 +32,26 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
-@media (max-width: 1160px) {
-  /* #formInput {
-    display: flex;
-    width: 13rem;
-    margin-left: 50px;
-    position: relative;
-    left: 33px;
-    margin-top: 5%;
-    transform: scale(.8);
-  } */
-  /* #formButton {
-    position: relative;
-    left: 142px;    
-    bottom: 15px;
-    transform: scale(.7);
-  } */
-  /* #formInput ::placeholder { 
-  } */
-  /* button#formButton {
-    right: 57px;
-    position: absolute;
-  } */
-  /* #contactUs {
-    margin-top: 25%;
-    font-size: .7rem;
-    margin-top: -15%;
-  } */
-  /* #contactDiv {
-    margin-top: 6%;
-    transform: scale(.8);
-margin-left: 9%;
-  } */
-}
-
 .insta img {
   width: 100%;
 }
 #mainGall, #marketplace {
   padding: 5% 5% 2% 5%;
 }
-
 .footerIcons {
   color: #c1c3d6  
 }
-
 #footer, #nav {
   width: 90vw;
 }
-
 #slideOut {
   transition-timing-function: ease-out;
   transition-duration: .10s;
   box-sizing:border-box;
 }
-
 .insta {
   float: right;
 }
-
 #footerDiv {
   display: flex;
   justify-content: space-between;
@@ -104,7 +65,6 @@ margin-left: 9%;
   padding: .35rem 2rem;
   position: relative;
   cursor: pointer;
-  /* margin: 1rem; */
   border-radius: 2px;
 }
 .border-animation::before,

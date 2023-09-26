@@ -51,7 +51,7 @@ function Foot() {
 
         <div className="flex justify-between flex-wrap" id='bottomDiv'>
           <div id='contactForm' className="mt-10 md:mt-16 sm:content-center">
-            <h3 className="md:text-3xl text-xl font-bod text-start">➰stay in the loop➰</h3>
+            <h3 className="lg:text-5xl md:text-3xl text-xl font-bod text-start">➰stay in the loop➰</h3>
               <form className="footerInput pt-4 flex" action="">
                 <label htmlFor="submit"></label>
                 <input
@@ -59,32 +59,33 @@ function Foot() {
                   type="text required"
                   placeholder="gardenart@gmail.com  "
                   id='formInput'
-                  className="rounded-sm h-12 font-bod pl-2 pr-10 sm:w-64 content-center"
+                  className="rounded-sm h-12 font-bod pl-2 pr-10 w-64 sm:w-100 content-center"
                 />
               </form>
-            <button id='formButton' className="btn btn-animation font-bod  mt-5 ">Submit</button>
+            <button id='formButton' className="btn btn-animation font-bod mt-5 ">Submit</button>
           </div>
 
           <div id='contactUs' className="justify-between">
-            <h3 className="md:text-3xl text-xl font-bod flex mt-10 md:mt-16">➰contact us➰</h3>
+            <h3 className="lg:text-5xl md:text-3xl text-xl font-bod flex mt-10 md:mt-16">➰contact us➰</h3>
               <div className="flex items-center md:mr-3 mt-5">
                 <AiFillInstagram className="scale-150 mr-2 sm:justify-start" />
-                <p className="text-sm md:text-md">@cgac.workshop</p>
+                <p className="text-sm md:text-lg">@cgac.workshop</p>
               </div>
 
               <div className="flex items-center md:mr-3 mt-5">
                 <FaTiktok className="scale-150 mr-2" />
-                <p className="text-sm md:text-md">@cgac.toronto</p>
+                <p className="text-sm md:text-lg">@cgac.toronto</p>
               </div>
 
               <div className="flex items-center text-end md:mr-3 mt-1">
                 <AiOutlineMail className="scale-150 mt-3 mr-2" />
-                <p className="mt-3 text-sm md:text-md">cgac.spillthebeans@gmail.com</p>
+                <p className="mt-3 text-sm md:text-lg">cgac.spillthebeans@gmail.com</p>
               </div>
           </div>
 
               <div>
                 <Image
+                className="-mt-10"
                 src={'/grassFooter.png'}
                 width={2000}
                 height={400}
