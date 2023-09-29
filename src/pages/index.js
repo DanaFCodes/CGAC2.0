@@ -17,7 +17,7 @@ export default function Home() {
             <Nav />
         </header>
 
-        <main className="text-olive">
+        <main className="text-olive2">
           <section id="comingUp " style={{padding: '5% 5% 2% 5%'}}>
             <h2 className="mt-4 mb-4 font-heading text-center mr-32 md:mr-64">coming up: </h2>
             <h2 className="md:text-2xl font-heading text-center">🚨materials exchange🚨</h2>
