@@ -13,12 +13,12 @@ export default function Home() {
   return (
     <>
       <section id='homePage' className="bg-princeOrange">
-        <header style={{padding: '5% 5% 2% 5%'}}>
+        {/* <header style={{padding: '5% 5% 2% 5%'}}>
             <Nav />
-        </header>
+        </header> */}
 
         <main className="text-olive2">
-          <section id="comingUp " style={{padding: '5% 5% 2% 5%'}}>
+          {/* <section id="comingUp " style={{padding: '5% 5% 2% 5%'}}>
             <h2 className="mt-4 mb-4 font-heading text-center mr-32 md:mr-64">coming up: </h2>
             <h2 className="md:text-2xl font-heading text-center">🚨materials exchange🚨</h2>
             <h2 className="md:text-2xl font-heading text-center">🚨spring book share🚨</h2>
@@ -26,9 +26,9 @@ export default function Home() {
             <h1 className="md:text-5xl text-xl flex items-center justify-center font-heading md:pb-5 mt-8 align-middle border-green-950 border-3">
             🌱step inside our garden🌱
             </h1>
-          </section>
+          </section> */}
 
-          <section id="galleryPortal" className="py-10 relative">
+          <section id="galleryPortal" className="relative">
               <Image className="opacity-100 hover:opacity-0"
               src="/landing1.png"
               width={2200}
@@ -37,7 +37,7 @@ export default function Home() {
               onClick={enterGallery}
               />
 
-              <Image className="opacity-0 hover:opacity-100 absolute bottom-8"
+              <Image className="opacity-0 hover:opacity-100 bottom-8"
               src="/landing3.png"
               width={2200}
               height={200}
@@ -46,9 +46,9 @@ export default function Home() {
               />
           </section>
         </main>
-        <footer style={{padding: '5% 5% 2% 5%'}}>
+        {/* <footer style={{padding: '5% 5% 2% 5%'}}>
           <Foot />
-        </footer>
+        </footer> */}
       </section>
     </>
   );

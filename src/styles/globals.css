@@ -17,29 +17,8 @@
   } 
 }
 
-body {
-  /* background-color: brown; */
-  /* margin: 0 auto; */
-  /* width: 80%; */
-  /* border: 20px rgba(255, 0, 0, 0) solid; */
-  
-  /* FOR DARK MODE: */
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
-}
-
 .insta img {
   width: 100%;
-}
-#mainGall, #marketplace {
-  padding: 5% 5% 2% 5%;
-}
-.footerIcons {
-  color: #c1c3d6  
 }
 #footer, #nav {
   width: 90vw;

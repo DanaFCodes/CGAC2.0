@@ -20,7 +20,7 @@ function mainGallery() {
           </section>
         </header>
 
-        <main className="">
+        <main className="" style={{padding: '5% 5% 2% 5%'}}>
           <h1 className="text-3xl lg:text-5xl flex font-heading mt-16 mb-5 text-persimmon">Florals? For Spring? Groundbreaking...</h1>
           <h2 className="font-heading text-xl flex mb-2">Curatorial Statement</h2>
           <h2 className="font-heading text-sm flex">click sound wave to listen, press again to stop</h2>
