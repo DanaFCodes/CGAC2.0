@@ -32,7 +32,7 @@ module.exports = {
         'frenchGrey': '#c1c3d6',
         'apricot': '#ffdac6',
         'princeOrange': '#fbb64f',
-        //OLD UGLY 'princeOrange': '#fa9500',
+        'princeOrangeOG': '#fa9500',
         'persimmon': '#eb6424',
       },
     },

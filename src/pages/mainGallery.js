@@ -13,7 +13,7 @@ function mainGallery() {
     
   return (
     <>
-      <section id="mainGall" className="bg-apricot grid place-items-center">
+      <section id="mainGall" className="bg-apricot text-olive2 grid place-items-center">
         <header className="">
           <section className="">
             <Nav />
@@ -23,7 +23,15 @@ function mainGallery() {
         <main className="" style={{padding: '5% 5% 2% 5%'}}>
           <h1 className="text-3xl lg:text-5xl flex font-heading mt-16 mb-5 text-persimmon">Florals? For Spring? Groundbreaking...</h1>
           <h2 className="font-heading text-xl flex mb-2">Curatorial Statement</h2>
+          <div className='flex'>
           <h2 className="font-heading text-sm flex">click sound wave to listen, press again to stop</h2>
+          <Image className="mt-[-2%]"
+            src={'/yellowDownArrow.png'}
+            height={100}
+            width={100}
+            alt='image of sound wave'
+            />
+          </div>
           <button onClick={play} className='relative'>
             <audio id="a1" src="./chainSmokers-Roses.mp3"></audio> 
             <Image className="opacity-0 hover:opacity-100 absolute bottom-0"
@@ -61,8 +69,16 @@ Delivered by Meryl Streep in the iconic 2006 movie, The Devil Wears Prada, the q
               width={800} 
               alt='painting by'/>
             </div>
+            <p className='text-xs ml-[25%] text-center w-[50%] mt-5'>You left me in a ditch: unaware, uncared for, unknown, 60 x 84, Cotton embroidery thread, natural dyed cotton fabric, natural dyes, notebook, paint, pine wood, plant matter, plastic gallon buckets, Queen Annes Lace, seeds, thrifted jars</p>
             <div className="flex items-center justify-center">
-            <button className="btn btn-animation font-bod mt-5 mb-16">credit line</button> 
+            <button className="btn btn-animation font-bod mt-5 mb-16">artist statement</button> 
+            </div>
+
+            <div>
+              <p className='mt-[-2%] text-center ' >audio clip here</p>
+              <p id='artistState' className='ml-[25%] text-center w-[50%] mb-12'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non euismod leo. Donec non nunc magna. Aliquam porta porta justo eu facilisis. Etiam id venenatis tellus. Maecenas dictum justo et nisi placerat, non eleifend ex tristique. Nulla erat augue, pharetra id volutpat viverra, pellentesque nec nunc. Fusce a varius arcu.
+
+In feugiat pellentesque nisl eget consequat. Sed finibus molestie mauris, vitae pharetra ante tempor eget. Fusce quis nisi at turpis pulvinar aliquam. Nullam tempor, diam pulvinar tempus vestibulum, enim orci euismod ipsum, sed lacinia enim tellus quis nunc. Donec euismod odio ac leo blandit fermentum. Nam dapibus, augue quis ullamcorper.</p>
             </div>
 
             <div className='text-center mt-5'>

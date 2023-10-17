@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <section id='homePage' className="bg-princeOrange">
+      <section id='homePage' className="bg-princeOrange 	">
         {/* <header style={{padding: '5% 5% 2% 5%'}}>
             <Nav />
         </header> */}
@@ -28,7 +28,7 @@ export default function Home() {
             </h1>
           </section> */}
 
-          <section id="galleryPortal" className="relative">
+          <section id="galleryPortal" className="relative overscroll-none">
               <Image className="opacity-100 hover:opacity-0"
               src="/landing1.png"
               width={2200}
@@ -37,7 +37,7 @@ export default function Home() {
               onClick={enterGallery}
               />
 
-              <Image className="opacity-0 hover:opacity-100 bottom-8"
+              <Image className="opacity-70 hover:opacity-100 absolute top-0"
               src="/landing3.png"
               width={2200}
               height={200}

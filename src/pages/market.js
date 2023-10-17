@@ -1,31 +1,30 @@
 import React from 'react'
-import Nav from "../../components/Nav";
+import Nav2 from "../../components/Nav2";
 import Foot from "../../components/Foot";
 import Image from 'next/image';
 
 function market() {
   return (
     <>
-      <section id='marketplace'className="bg-lime-400 grid place-items-center">
+      <section id='marketplace'className="bg-olive grid place-items-center">
         <header className="">
           <section className="">
-            <Nav />
+            <Nav2 />
           </section>
         </header>
-        <main className="">
-          <h2>Marketplace</h2>
-          <h4>
+        <main className="" style={{padding: '5% 5% 2% 5%'}}>
+          <h2 className='text-center'>Marketplace</h2>
+          <h4 className='text-center'>
             Welcome to the CGAC Marketplace! <br />
             <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-            recusandae mollitia deserunt, veniam quisquam quos animi quo
-            reprehenderit unde, placeat, cum dignissimos minima beatae amet in
-            earum illo. Numquam atque quis praesentium eligendi corrupti maxime
-            neque distinctio molestias nimi obcaecati illo beatae, eos
-            quibusdam nostrum temporibus, doloribus quidem pariatur! Itaque.
+            Below you will find works by a variety of emerging artists, many of whom have been exhibited here at CGAC.  CGAC’s mission is rooted in creating community, and as such aims to help emerging artists navigate the local art-scene, as well as making art more accessible to the public.
+
+This Market is another iteration of helping our community of artists bloom and prosper in the art world. Let’s get artists PAID for their amazing work! <br /><br />
+
+Profits go directly to the artists, and the art goes directly to you! What could be better?
           </h4>
 
-          <section id="marketArtworks" className="mt-6 flex">
+          <section id="marketArtworks" className="mt-6 flex mb-12">
             <div className="flex items-center justify-center pr-10 py-10 relative">
               <Image src="/logoNoBackG.png" alt="" height={500} width={400} />
               <p className="absolute top-64 pb-12 text-center">
