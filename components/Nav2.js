@@ -28,7 +28,7 @@ function Nav() {
               <li className="hover:text-olive">Home</li>
             </Link> */}
             <Link href={"/mainGallery"}>
-              <li className="hover:text-princeOrangeOG mt-3 lg:text-2xl ">Main </li>
+              <li className="hover:text-princeOrangeOG mt-3 lg:text-2xl ">Main Gallery</li>
             </Link>
             <Link href={"/calendar"}>
               <li className="hover:text-princeOrangeOG mt-3 lg:text-2xl">Calendar</li>
@@ -43,7 +43,7 @@ function Nav() {
             />
             </Link>
             
-            <Link href={"/market"}>
+            <Link href={"/Market"}>
               <li className="hover:text-princeOrangeOG mt-3 lg:text-2xl">Marketplace</li>
             </Link>
             {/* <Link href={"/ingen"}>
@@ -52,7 +52,7 @@ function Nav() {
             {/* <Link href={"/archive"}>
               <li className="hover:text-olive">Archive</li>
             </Link> */}
-            <Link href={"/aboutUs"}>
+            <Link href={"/AboutUs"}>
               <li className="hover:text-princeOrangeOG mt-3 lg:text-2xl">About us</li>
             </Link>
           </ul>
@@ -100,13 +100,13 @@ function Nav() {
             alt='CGAC logo'
             />
             </Link>
-            <Link href={"/market"}>
+            <Link href={"/Market"}>
               <li className="hover:text-princeOrange text-frenchGrey sm:text-xs mr-2">Marketplace</li>
             </Link>
             {/* <Link href={"/archive"}>
               <li className="hover:text-princeOrange text-frenchGrey">Archive</li>
             </Link> */}
-            <Link href={"/aboutUs"}>
+            <Link href={"/AboutUs"}>
               <li className="hover:text-princeOrange text-frenchGrey sm:text-xs">About us</li>
             </Link>
           {/* <div className="flex gap-2 py-1">

@@ -12,9 +12,9 @@ function Nav() {
   const handleNav = () => {
     setMenuOpen(!menuOpen)
     if (!menuOpen) {
-      document.getElementById("burg").style.display="none";  ;
+      document.getElementById("burg").style.display="none";  
   } else {
-    document.getElementById("burg").style.display="block"
+    document.getElementById("burg").style.display="flex"
   }
   }
 
@@ -26,7 +26,7 @@ function Nav() {
             {/* <Link href={"/"}>
               <li className="hover:text-olive">Home</li>
             </Link> */}
-            <Link href={"/mainGallery"}>
+            <Link href={"/MainGallery"}>
               <li className="hover:text-princeOrangeOG  mt-1 lg:text-2xl ">Main Gallery</li>
             </Link>
             <Link href={"/calendar"}>
@@ -34,15 +34,22 @@ function Nav() {
             </Link>
             
             <Link href="/">
-            <Image className='mt-[-5%] lg:scale-150 md:scale-'
-            src="/logo.png"
+            <Image className='mt-[-5%] lg:scale-150 md:scale- hover:opacity-0'
+            src="/frenchLogo.png"
+            width={100}
+            height={100}
+            alt='CGAC logo'
+            />
+            <Image className='mt-[-49%] lg:scale-150 md:scale- opacity-0 hover:opacity-100'
+            src="/persimmonLogo.png"
             width={100}
             height={100}
             alt='CGAC logo'
             />
             </Link>
+
             
-            <Link href={"/market"}>
+            <Link href={"/Market"}>
               <li className="hover:text-princeOrangeOG mt-1 lg:text-2xl">Marketplace</li>
             </Link>
             {/* <Link href={"/ingen"}>
@@ -51,7 +58,7 @@ function Nav() {
             {/* <Link href={"/archive"}>
               <li className="hover:text-olive">Archive</li>
             </Link> */}
-            <Link href={"/aboutUs"}>
+            <Link href={"/AboutUs"}>
               <li className="hover:text-princeOrangeOG mt-1 lg:text-2xl">About us</li>
             </Link>
           </ul>
@@ -84,7 +91,7 @@ function Nav() {
         </div>
         <div className={menuOpen ? "flex float-left" : "hidden"}>
           <ul className='flex w-100 text-center sm:gap-3 bg-olive'>
-            <Link href={"/mainGallery"}>
+            <Link href={"/MainGallery"}>
               <li className="hover:text-princeOrangeOG text-frenchGrey sm:text-xs mr-1">Main Gallery</li>
             </Link>
             <Link href={"/calendar"}>
@@ -98,13 +105,13 @@ function Nav() {
             alt='CGAC logo'
             />
             </Link>
-            <Link href={"/market"}>
+            <Link href={"/Market"}>
               <li className="hover:text-princeOrange text-frenchGrey sm:text-xs ml-[-10%]">Marketplace</li>
             </Link>
             {/* <Link href={"/archive"}>
               <li className="hover:text-princeOrange text-frenchGrey">Archive</li>
             </Link> */}
-            <Link href={"/aboutUs"}>
+            <Link href={"/AboutUs"}>
               <li className="hover:text-princeOrange text-frenchGrey sm:text-xs">About us</li>
             </Link>
           {/* <div className="flex gap-2 py-1">

@@ -7,7 +7,7 @@ export default function Home() {
   // onClick, door redirects to gallery page 
   function enterGallery() {
     const door = document.getElementById("door");
-    location.href = 'mainGallery';    
+    location.href = 'MainGallery';    
   }
 
   return (
@@ -37,6 +37,7 @@ export default function Home() {
               onClick={enterGallery}
               />
 
+              {/* I THINK WE SHOULD CROP THE LEAFY GATE PART OF THE OPEN-GATE.PNG AND THEN ADD IT AS WHAT THIS LANDING3.PNG IS DOING NOW */}
               <Image className="opacity-70 hover:opacity-100 absolute top-0"
               src="/landing3.png"
               width={2200}
