@@ -8,7 +8,6 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -16,11 +15,15 @@
     --background-end-rgb: 0, 0, 0;
   } 
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 .insta img {
 width: 100%;
 }
- #nav {
+#nav {
   width: 90vw;
 }
 #slideOut {
@@ -34,6 +37,21 @@ width: 100%;
 #footerDiv {
   display: flex;
   justify-content: space-between;
+}
+#gatDivDiv{
+  width: 100%; 
+  max-width: 400px;
+  min-width: 400px;
+}
+#gateDiv {
+  width: calc(50% - 400px); 
+  /* max-width: 800px; */
+  height: calc(100% - 300px); 
+  background-color: red;
+  position: absolute;
+  left: 14%;
+  bottom: 15%;
+  z-index: 50;
 }
 
 /* submit button */

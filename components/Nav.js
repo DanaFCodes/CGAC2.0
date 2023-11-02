@@ -20,7 +20,7 @@ function Nav() {
 
   return (
     <>
-    <nav className="font-body">
+    <nav className="font-body ">
       <div id="" className="justify-between items-center flex">
           <ul style={{padding: '5% 5% 2% 5%'}} className="z-10 md:visible sm:invisible justify-center flex w-screen text-center md:gap-8 lg:gap-12 sm:text-sm md:text-md lg:text-lg text-frenchGrey">
             {/* <Link href={"/"}>
@@ -125,7 +125,7 @@ function Nav() {
     
       <Image className='md:mt-[-10%] sm:mt-[-10%] mb-[-15%] z-0'
       src="/bushy2.png"
-      width={3500}
+      width={2000}
       height={300}
       alt='bushy nav divider'
       />

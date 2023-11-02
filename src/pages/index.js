@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <section id='homePage' className="bg-princeOrange 	">
+      <section id='homePage' className="">
         {/* <header style={{padding: '5% 5% 2% 5%'}}>
             <Nav />
         </header> */}
@@ -28,23 +28,59 @@ export default function Home() {
             </h1>
           </section> */}
 
-          <section id="galleryPortal" className="relative overscroll-none">
-              <Image className="opacity-100 hover:opacity-0"
-              src="/landing1.png"
+          <section id="galleryPortal" className="relative overscroll-none ">
+            <div className='relative'>
+
+              <Image className="opacity-100"
+              src="/largeLand.png"
               width={2200}
-              height={200}
+              height={500}
               alt='Illustration of garden gate'
               onClick={enterGallery}
               />
 
               {/* I THINK WE SHOULD CROP THE LEAFY GATE PART OF THE OPEN-GATE.PNG AND THEN ADD IT AS WHAT THIS LANDING3.PNG IS DOING NOW */}
-              <Image className="opacity-70 hover:opacity-100 absolute top-0"
-              src="/landing3.png"
-              width={2200}
-              height={200}
+              {/* <Image className="opacity-100 hover:opacity-100 absolute top-[50%] left-[39%] right-0 z-20"
+              src="/openGate.png"
+              width={420}
+              height={400}
+              alt='Illustration of garden gate'
+              onClick={enterGallery}
+              /> */}
+              {/* <div className='relative'>
+               <Image className="opacity-50 hover:opacity-100 absolute top-[44.5%] left-[38.65%] right-0 z-20"
+              src="/landGate.png"
+              width={415}
+              height={500}
               alt='Illustration of garden gate'
               onClick={enterGallery}
               />
+              </div> */}
+              
+              <div className='' id='gatDivDiv'>
+              <div className='relative' id='gateDiv'>
+              <button className='w-80 h-80 top-[-25%] left-[37%]'>
+              <Image className="opacity-50 hover:opacity-100 absolute top-[44.5%] left-[38.65%] right-0 z-20"
+              src="/landGate.png"
+              width={415}
+              height={500}
+              alt='Illustration of garden gate'
+              onClick={enterGallery}
+              />
+              </button>
+              </div>
+              </div>
+
+              </div>
+
+                 {/* <Image className="opacity-100 absolute top-[25.3%] left-[-0.15%] right-0 z-20"
+              src="/glag2.gif"
+              width={390}
+              height={500}
+              alt='Illustration of garden gate'
+              onClick={enterGallery}
+              /> */}
+
           </section>
         </main>
         {/* <footer style={{padding: '5% 5% 2% 5%'}}>

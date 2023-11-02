@@ -5,25 +5,38 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 function MainGallery() {
-  const [artistOpen, setArtistOpen] = useState(false);
-  if (typeof window !== 'undefined') {
-    document.addEventListener("DOMContentLoaded", function () {
-      const artistState = (document.getElementById("artistStatement"));
-      const artistButt = (document.getElementById("artistButt"));
-      artistButt.addEventListener("mouseover", function() {
-        this.textContent = "artist ste"
-      })
-      artistButt.addEventListener("mouseout", function() {
-        this.textContent = "flick"
-      })
-    });
-  }
-      const artistStatement = () => {
-    setArtistOpen(!artistOpen)
-    if (!artistOpen) {
-      artistState.style.display= "none";  
+  const [artistOpen, setArtistOpen] = useState(true);
+    const artistStatement = () => {
+    const artistButt = (document.getElementById("artistButt"));
+    const artistState = (document.getElementById("artistStatement"));
+    if (artistOpen) {
+      artistState.style.display= "block";  
+      artistButt.textContent = "collapse artist statement"
     } else {
-      artistState.style.display= "block";
+      artistState.style.display= "none";
+        artistButt.textContent = "expand artist statement"   
+    }
+  }
+  const artistStatement2 = () => {
+    const artistButt = (document.getElementById("artistButt2"));
+    const artistState = (document.getElementById("artistStatement2"));
+    if (artistOpen) {
+      artistState.style.display= "block";  
+      artistButt.textContent = "collapse artist statement"
+    } else {
+      artistState.style.display= "none";
+        artistButt.textContent = "expand artist statement"   
+    }
+  }
+  const artistStatement3 = () => {
+    const artistButt = (document.getElementById("artistButt3"));
+    const artistState = (document.getElementById("artistStatement3"));
+    if (artistOpen) {
+      artistState.style.display= "block";  
+      artistButt.textContent = "collapse artist statement"
+    } else {
+      artistState.style.display= "none";
+        artistButt.textContent = "expand artist statement"   
     }
   }
   function play() {
@@ -31,7 +44,6 @@ function MainGallery() {
     if (audio.paused) audio.play();
     else audio.pause();
   }
-
 
   return (
     <>
@@ -43,13 +55,12 @@ function MainGallery() {
         </header>
 
         <main className="" style={{padding: '5% 5% 2% 5%'}}>
-          <Image
+          <Image className='ml-[-5%] mt-[-5%]'
           src={'/gallText.png'}
-          height={400}
-          width={400}
+          height={600}
+          width={600}
           alt="show-header"
           />
-          {/* <h1 className="text-3xl lg:text-5xl flex font-heading mt-16 mb-5 text-persimmon">Florals? For Spring? Groundbreaking...</h1> */}
           <h2 className="font-heading text-xl flex mb-2">Curatorial Statement</h2>
           <div className='flex'>
           <h2 className="font-heading text-sm flex">click sound wave to listen, press again to stop</h2>
@@ -91,7 +102,7 @@ function MainGallery() {
 
           </div>
 
-          <h4 className="font-bod mt-7 mb-1 text-sm ml-[25%] text-center w-[50%] mb-12">
+          <h4 className="font-bod mt-7 text-sm ml-[25%] text-center w-[50%] mb-12">
             A note from the Curators: <br />
             Depictions of spring and florals have been present in art for centuries! With the arrival of spring, and blooms beginning to erupt all around us, we were interested in the question, “How can floral and spring imagery, and all its associations and cliches, be new and exciting after so many iterations through time?”. The following quote came to mind to describe this need for something new, 		
 
@@ -114,14 +125,13 @@ Delivered by Meryl Streep in the iconic 2006 movie, The Devil Wears Prada, the q
               alt='painting by'/>
             </div>
             <p className='text-xs ml-[25%] text-center w-[50%] mt-5'>You left me in a ditch: unaware, uncared for, unknown, 60 x 84, Cotton embroidery thread, natural dyed cotton fabric, natural dyes, notebook, paint, pine wood, plant matter, plastic gallon buckets, Queen Annes Lace, seeds, thrifted jars</p>
+            
             <div onClick={() => setArtistOpen(!artistOpen)} className="flex items-center justify-center ">
-              {/* onClick={showArtStatement()} */}
-            <button onClick={artistStatement} className="btn btn-animation font-bod mt-5 mb-16 hover:content-['']">
-              <p id='artistButt' className="hover:before:content-[attr(data-hover)]" data-hover='click me!'>artist statement</p>
-            </button> 
+              <button onClick={artistStatement} className="btn btn-animation font-bod mt-5 mb-16 hover:content-['']">
+                <p id='artistButt' className="" data-hover=''>expand artist statement</p>
+              </button> 
             </div>
-
-            <div className='artistStatement hide artistOpen' id='artistStatement hide'>
+            <div className='hidden' id='artistStatement'>
               <p className='mt-[-2%] text-center ' >audio clip here</p>
               <p id='artistState' className='ml-[25%] text-center w-[50%] mb-12'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non euismod leo. Donec non nunc magna. Aliquam porta porta justo eu facilisis. Etiam id venenatis tellus. Maecenas dictum justo et nisi placerat, non eleifend ex tristique. Nulla erat augue, pharetra id volutpat viverra, pellentesque nec nunc. Fusce a varius arcu.
 
@@ -139,8 +149,16 @@ In feugiat pellentesque nisl eget consequat. Sed finibus molestie mauris, vitae 
               width={ 1000} 
               alt='painting by'/>
             </div>
-            <div className="flex items-center justify-center">
-            <button className="btn btn-animation font-bod mt-5 mb-16">credit line</button> 
+            <div onClick={() => setArtistOpen(!artistOpen)} className="flex items-center justify-center ">
+              <button onClick={artistStatement2} className="btn btn-animation font-bod mt-5 mb-16 hover:content-['']">
+                <p id='artistButt2' className="" data-hover=''>expand artist statement</p>
+              </button> 
+            </div>
+            <div className='hidden' id='artistStatement2'>
+              <p className='mt-[-2%] text-center ' >audio clip here</p>
+              <p id='artistState' className='ml-[25%] text-center w-[50%] mb-12'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non euismod leo. Donec non nunc magna. Aliquam porta porta justo eu facilisis. Etiam id venenatis tellus. Maecenas dictum justo et nisi placerat, non eleifend ex tristique. Nulla erat augue, pharetra id volutpat viverra, pellentesque nec nunc. Fusce a varius arcu.
+
+In feugiat pellentesque nisl eget consequat. Sed finibus molestie mauris, vitae pharetra ante tempor eget. Fusce quis nisi at turpis pulvinar aliquam. Nullam tempor, diam pulvinar tempus vestibulum, enim orci euismod ipsum, sed lacinia enim tellus quis nunc. Donec euismod odio ac leo blandit fermentum. Nam dapibus, augue quis ullamcorper.</p>
             </div>
 
             <div className='text-center mt-5'>
@@ -154,8 +172,16 @@ In feugiat pellentesque nisl eget consequat. Sed finibus molestie mauris, vitae 
               width={1000} 
               alt='painting by'/>
             </div>
-            <div className="flex items-center justify-center">
-            <button className="btn btn-animation font-bod mt-5 mb-16">credit line</button> 
+            <div onClick={() => setArtistOpen(!artistOpen)} className="flex items-center justify-center ">
+              <button onClick={artistStatement3} className="btn btn-animation font-bod mt-5 mb-16 hover:content-['']">
+                <p id='artistButt3' className="" data-hover=''>expand artist statement</p>
+              </button> 
+            </div>
+            <div className='hidden' id='artistStatement3'>
+              <p className='mt-[-2%] text-center ' >audio clip here</p>
+              <p id='artistState' className='ml-[25%] text-center w-[50%] mb-12'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non euismod leo. Donec non nunc magna. Aliquam porta porta justo eu facilisis. Etiam id venenatis tellus. Maecenas dictum justo et nisi placerat, non eleifend ex tristique. Nulla erat augue, pharetra id volutpat viverra, pellentesque nec nunc. Fusce a varius arcu.
+
+In feugiat pellentesque nisl eget consequat. Sed finibus molestie mauris, vitae pharetra ante tempor eget. Fusce quis nisi at turpis pulvinar aliquam. Nullam tempor, diam pulvinar tempus vestibulum, enim orci euismod ipsum, sed lacinia enim tellus quis nunc. Donec euismod odio ac leo blandit fermentum. Nam dapibus, augue quis ullamcorper.</p>
             </div>
           </section>
         </main>
