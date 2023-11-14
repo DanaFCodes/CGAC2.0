@@ -19,7 +19,7 @@ export default function Home() {
               width={2200}
               height={500}
               alt='Illustration of garden gate'
-              // onClick={enterGallery}
+              onClick={enterGallery}
               />
         
               {/* <div className='' id='gatDivDiv'>
