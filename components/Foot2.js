@@ -38,7 +38,7 @@ const sendEmail = (e) => {
         <div style={{padding: '5% 5% 2% 5%'}}>
           <div className="ml-[-1%] mb-2">
           <Image 
-            src={'/gotInsta.png'}
+            src={'/yellowGotInsta.png'}
             width={300}
             height={700}
             alt="CGAC workshop poster"
@@ -77,7 +77,7 @@ const sendEmail = (e) => {
           <div id='container' className="mt-1 md:mt-10 sm:content-center z-10">
           <Image 
           className="z-20 ml-[-5%]" 
-          src={'/stayLoop.png'}
+          src={'/yellowStayLoop.png'}
           width={400}
           height={700}
           alt="stay in the loop header"
@@ -95,7 +95,7 @@ const sendEmail = (e) => {
           <div id='contactUs' className="pt-10 z-20 ">
             <Image 
             className="z-20" 
-            src={'/contactUs.png'}
+            src={'/yellowContactUs.png'}
             width={300}
             height={700}
             alt="contact us header"

@@ -1,14 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
 import Link from "next/link";
-// import { BsFillMoonStarsFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import Image from 'next/image';
 
 function Nav() {
+  // functions
   const [menuOpen, setMenuOpen] = useState(false);
-
   const handleNav = () => {
     setMenuOpen(!menuOpen)
     if (!menuOpen) {
@@ -22,26 +21,26 @@ function Nav() {
     <>
     <nav className="font-body ">
       <div id="" className="justify-between items-center flex">
-          <ul style={{padding: '5% 5% 2% 5%'}} className="z-10 md:visible sm:invisible justify-center flex w-screen text-center md:gap-8 lg:gap-12 sm:text-sm md:text-md lg:text-lg text-frenchGrey">
+          <ul style={{padding: '5% 5% 2% 5%'}} className="z-10 md:visible sm:invisible justify-center flex w-screen text-center md:gap-8 lg:gap-12 sm:text-sm md:text-md lg:text-lg text-persimmon">
             {/* <Link href={"/"}>
               <li className="hover:text-olive">Home</li>
             </Link> */}
             <Link href={"/MainGallery"}>
               <li className="hover:text-princeOrangeOG  mt-1 lg:text-2xl ">Main Gallery</li>
             </Link>
-            <Link href={"/calendar"}>
+            <Link href={"/Calendar"}>
               <li className="hover:text-princeOrangeOG mt-1 lg:text-2xl">Calendar</li>
             </Link>
             
             <Link href="/">
             <Image className='mt-[-5%] lg:scale-150 md:scale- hover:opacity-0'
-            src="/frenchLogo.png"
+            src="/logoPersimmonHR.png"
             width={100}
             height={100}
             alt='CGAC logo'
             />
             <Image className='mt-[-49%] lg:scale-150 md:scale- opacity-0 hover:opacity-100'
-            src="/persimmonLogo.png"
+            src="/logoPrinceOrange.png"
             width={100}
             height={100}
             alt='CGAC logo'
@@ -94,7 +93,7 @@ function Nav() {
             <Link href={"/MainGallery"}>
               <li className="hover:text-princeOrangeOG text-frenchGrey sm:text-xs mr-1">Main Gallery</li>
             </Link>
-            <Link href={"/calendar"}>
+            <Link href={"/Calendar"}>
               <li className="hover:text-princeOrange text-frenchGrey sm:text-xs ">Calendar</li>
             </Link>
             <Link href="/">
@@ -122,13 +121,6 @@ function Nav() {
         </div>
         </div>
       </nav>
-    
-      <Image className='md:mt-[-10%] sm:mt-[-10%] mb-[-15%] z-0'
-      src="/bushy2.png"
-      width={2000}
-      height={300}
-      alt='bushy nav divider'
-      />
     </>
   );
 } 

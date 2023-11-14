@@ -30,7 +30,7 @@ const sendEmail = (e) => {
       <section id="footer" className="h-30">
         <Image
         className="-mt-7 md:-mt-2 " 
-        src="/footLoopLoop.png"
+        src="/yellowLoop.png"
         width={2550}
         height={200}
         alt="loop divider"

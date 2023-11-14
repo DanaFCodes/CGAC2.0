@@ -6,15 +6,14 @@ import Image from 'next/image';
 function Market() {
   return (
     <>
-      <section id='marketplace'className="bg-olive grid place-items-center">
+      <section id='marketplace'className=" grid place-items-center" style={{'background-image': "url('/marketBack.png')", 'minWidth': '100vw', 'backgroundSize': 'contain', 'backgroundRepeat': 'no-repeat'}}>
         <header className="">
           <section className="">
             <Nav3 />
           </section>
         </header>
         <main className="" style={{padding: '5% 5% 2% 5%'}}>
-          <h2 className='text-center'>Marketplace</h2>
-          <h4 className='text-center'>
+          <h4 className='text-center mt-72'>
             Welcome to the CGAC Marketplace! <br />
             <br />
             Below you will find works by a variety of emerging artists, many of whom have been exhibited here at CGAC.  CGAC’s mission is rooted in creating community, and as such aims to help emerging artists navigate the local art-scene, as well as making art more accessible to the public.

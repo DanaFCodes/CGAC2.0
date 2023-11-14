@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 function MainGallery() {
+  // functions
   const [artistOpen, setArtistOpen] = useState(true);
     const artistStatement = () => {
     const artistButt = (document.getElementById("artistButt"));
@@ -47,70 +48,54 @@ function MainGallery() {
 
   return (
     <>
-      <section id="mainGall" className="bg-apricot text-olive2 grid place-items-center">
-        <header className="">
-          <section className="">
+      <section id="mainGall" className="text-olive2 grid place-items-center" style={{'background-image': "url('/galleryBackdrop.png')", 'minWidth': '100vw', 'backgroundSize': 'contain', 'backgroundRepeat': 'no-repeat'}}>
+        <header>
+          <section>
             <Nav />
           </section>
         </header>
 
-        <main className="" style={{padding: '5% 5% 2% 5%'}}>
-          <Image className='ml-[-5%] mt-[-5%]'
-          src={'/gallText.png'}
-          height={600}
-          width={600}
-          alt="show-header"
-          />
-          <h2 className="font-heading text-xl flex mb-2">Curatorial Statement</h2>
-          <div className='flex'>
-          <h2 className="font-heading text-sm flex">click sound wave to listen, press again to stop</h2>
-          <Image className="mt-[-2%]"
-            src={'/yellowDownArrow.png'}
-            height={100}
-            width={100}
+        <main style={{padding: '5% 5% 2% 5%'}}>
+          <h4 className="font-bod mt-[25%] text-sm ml-[40%] text-center w-[50%] mb-12">
+            Depictions of spring and florals have been present in art for centuries! With the arrival of spring, and blooms beginning to erupt all around us, we were interested in the question, “How can floral and spring imagery, and all its associations and cliches, be new and exciting after so many iterations through time?”. The following quote came to mind to describe this need for something new, “Florals? For spring? Groundbreaking” <br/>Delivered by Meryl Streep in the iconic 2006 movie, The Devil Wears Prada, the quote was the prompt presented to artists for CGAC’s 5th digital exhibition.<br /> <br />It brings an opportunity to reinvent and invigorate the theme of florals and spring; Artists Breann Ritchie, Cleo Peterson, Donica Larade, Helen Tran, Lanni Weingarten, Pegy Korat, and Sarah Zanchetta did just that.  Exploring themes of love, growth, ancestral rituals, transformation, healing, and more, these emerging artists are taking us into their world. A new renaissance of florals!
+          </h4>
+          
+          <div className='flex '>
+          <div className='relative text-center w-[100%]'>
+          <h2 className="font-bod text-sm ml-[30%] mb-10 mt-16">click sound wave to listen, press again to stop</h2>
+          </div>
+          <Image className="sm:ml-[-95%] lg:ml-[-55%] sm:mt-[-27%] lg:mt-[-5%] sm:scale-50 lg:scale-75 lg:block md:block sm:block"
+            src={'/yellaArra.png'}
+            height={20}
+            width={200}
             alt='image of sound wave'
             />
           </div>
-          
-          <div className='flex'>
-          <div>
-            <Image
+          <div className='flex lg:mt-[-1%]'>
+            <Image className='sm:hidden lg:block'
             src={'/ear.png'}
             height={100}
             width={100}
             alt='ear'
             />
-          </div>
-
           <div>
           <button onClick={play} className='relative'>
             <audio id="a1" src="./chainSmokers-Roses.mp3"></audio> 
-            <Image className="opacity-0 hover:opacity-100 absolute bottom-0"
-            src={'/soundWave1.png'}
+            <Image className="opacity-0 hover:opacity-100 absolute top-[-2%]"
+            src={'/soundLong1.png'}
             height={700}
-            width={2000}
+            width={5000}
             alt='image of sound wave'
             />
             <Image className="opacity-100"
-              src={'/soundWave3.png'}
+              src={'/soundLong2.png'}
               height={100}
-              width={1000}
+              width={5000}
               alt='image of sound wave'
             />
           </button>
           </div>
-
           </div>
-
-          <h4 className="font-bod mt-7 text-sm ml-[25%] text-center w-[50%] mb-12">
-            A note from the Curators: <br />
-            Depictions of spring and florals have been present in art for centuries! With the arrival of spring, and blooms beginning to erupt all around us, we were interested in the question, “How can floral and spring imagery, and all its associations and cliches, be new and exciting after so many iterations through time?”. The following quote came to mind to describe this need for something new, 		
-
-“Florals? For spring? Groundbreaking”
-
-Delivered by Meryl Streep in the iconic 2006 movie, The Devil Wears Prada, the quote was the prompt presented to artists for CGAC’s 5th digital exhibition.<br /> <br />It brings an opportunity to reinvent and invigorate the theme of florals and spring; Artists Breann Ritchie, Cleo Peterson, Donica Larade, Helen Tran, Lanni Weingarten, Pegy Korat, and Sarah Zanchetta did just that.  Exploring themes of love, growth, ancestral rituals, transformation, healing, and more, these emerging artists are taking us into their world. A new renaissance of florals!
-            
-          </h4>
 
           <section id="theArtworks" className="mt-6 max-w-full overflow-hidden">
             <div className='text-center mt-10'>

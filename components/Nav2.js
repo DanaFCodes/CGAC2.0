@@ -27,10 +27,10 @@ function Nav() {
             {/* <Link href={"/"}>
               <li className="hover:text-olive">Home</li>
             </Link> */}
-            <Link href={"/mainGallery"}>
+            <Link href={"/MainGallery"}>
               <li className="hover:text-princeOrangeOG mt-3 lg:text-2xl ">Main Gallery</li>
             </Link>
-            <Link href={"/calendar"}>
+            <Link href={"/Calendar"}>
               <li className="hover:text-princeOrangeOG mt-3 lg:text-2xl">Calendar</li>
             </Link>
             
@@ -86,10 +86,10 @@ function Nav() {
         </div>
         <div className={menuOpen ? "flex float-left" : "hidden"}>
           <ul className='gap-4 flex text-center sm:gap-3 bg-olive'>
-            <Link href={"/mainGallery"}>
+            <Link href={"/MainGallery"}>
               <li className="hover:text-princeOrangeOG text-frenchGrey sm:text-xs">Main Gallery</li>
             </Link>
-            <Link href={"/calendar"}>
+            <Link href={"/Calendar"}>
               <li className="hover:text-princeOrange text-frenchGrey sm:text-xs ">Calendar</li>
             </Link>
             <Link href="/">
@@ -117,13 +117,6 @@ function Nav() {
         </div>
         </div>
       </nav>
-    
-      <Image className='md:mt-[-10%] sm:mt-[-10%] mb-[-15%] z-0'
-      src="/apricotBush.png"
-      width={3500}
-      height={300}
-      alt='bushy nav divider'
-      />
     </>
   );
 } 

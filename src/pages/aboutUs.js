@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from "../../components/Nav";
-import Foot from "../../components/Foot";
+import Foot3 from "../../components/Foot3";
 import Image from 'next/image';
 import Link from "next/link";
 
@@ -8,13 +8,13 @@ import Link from "next/link";
 function AboutUs() {
   return (
     <>
-    <section className='bg-frenchGrey'> 
+    <section className='' style={{'background-image': "url('/aboutUsBack.png')", 'minWidth': '100vw', 'backgroundSize': 'cover', 'backgroundRepeat': 'no-repeat'}}> 
       <header >
         <Nav />
       </header>
 
       <main className="container text-olive2" style={{padding: '5% 5% 2% 5%'}}>
-        <h1 className='text-center text-lg md:text-5xl mt-10'>CGAC Mission Statement</h1>
+        <h1 className='text-center text-lg md:text-5xl mt-72'>CGAC Mission Statement</h1>
         <br />
         <br />
         <h4 className='text-center px-10 xl:px-30 sm:px-0 text-md md:text-lg lg:text-xl '>
@@ -77,7 +77,7 @@ function AboutUs() {
       </main>
       </section>
       <footer className='bg-frenchGrey' >
-        <Foot />
+        <Foot3 />
       </footer>
     </>
   );
