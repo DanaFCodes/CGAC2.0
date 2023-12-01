@@ -19,18 +19,29 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
-
-#galleryPortal {
-  /* overflow: hidden;
-  overflow: none; */
-  /* position: fixed; */
-}
-
 section#mainGall {
   background: url("/public/galleryBack3.png");
   display: block;
   min-height: 100%;
+}
+#scroll-d {
+  left: 20%;
+  top:13%;
+  color: #1a9797;
+  font-size: 8em;
+  font-weight: 200;
+  z-index: 100;
+  transform: translateY(4rem);
+  animation: scroll .5s ease-in alternate infinite;
+}
 
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
 
 .popup .overlay {

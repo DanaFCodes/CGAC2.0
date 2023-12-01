@@ -15,6 +15,14 @@ module.exports = {
       // xl= 1500+
       xl: '1500px',
     },
+    theme: {
+      animationDelay: {
+        100: "100ms",
+        200: "200ms",
+        300: "300ms",
+        400: "400ms",
+      },
+    },
     extend: {
       container: {
         center: true,
@@ -39,5 +47,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animation-delay")
+  ],
 };

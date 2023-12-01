@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav3 from "../../components/Nav3";
+import Nav from "../../components/Nav";
 import Foot from "../../components/Foot";
 import Image from 'next/image';
 
@@ -9,7 +9,7 @@ function Market() {
       <section id='marketplace'className=" grid place-items-center" style={{'background-image': "url('/marketBack.png')", 'minWidth': '100vw', 'backgroundSize': 'contain', 'backgroundRepeat': 'no-repeat'}}>
         <header className="">
           <section className="">
-            <Nav3 />
+            <Nav />
           </section>
         </header>
         <main className="" style={{padding: '5% 5% 2% 5%'}}>
@@ -24,11 +24,11 @@ Profits go directly to the artists, and the art goes directly to you! What could
           </h4>
 
           <section id="marketArtworks" className="mt-6 flex justify-center">
-            <div className="flex-col items-center justify-center pr-20 py-10">
-              <Image src="/danny1.jpg" alt="" height={700} width={500} />
-              <p className="pb-12 text-center mt-3">
+            <div className="flex-col items-center justify-center p-10">
+              <Image src="/danny1.jpg" alt="" height={500} width={500} />
+              {/* <p className="pb-12 text-center mt-3">
               credit line <br/> $price <br/> artist contact
-              </p>
+              </p> */}
             </div>
             <div className="flex-col items-center justify-center py-10 pr-20 ">
               <Image src="/danny2.jpg" alt="" height={500} width={600} />

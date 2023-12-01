@@ -34,14 +34,14 @@ function AboutUs() {
         {/* <button className="btn btn-animation font-bod mt-5 mr-10 bg-apricot">artist1</button>
         <button className="btn btn-animation font-bod mt-5 mr-10">artist2</button>
         <button className="btn btn-animation font-bod mt-5 ">artist3</button> */}
-        <Image
+        {/* <Image
         className='rounded-3xl mr-3 relative'
         src={'/artistB.png'}
         width={1500}
         height={2500}
         alt='branch with leaves and artists names on those leaves'
         
-        />
+        /> */}
          
         <button>
           <Link href={"/MainGallery"} className='absolute left-60 bottom-[-34%] -rotate-45 text-xl'>Kimia Ghofrani</Link>

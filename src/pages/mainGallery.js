@@ -56,7 +56,7 @@ function MainGallery() {
         </header>
 
         <main style={{padding: '5% 5% 2% 5%'}}>
-          <h4 className="font-bod mt-[25%] text-sm ml-[40%] text-center w-[50%] mb-12">
+          <h4 className="font-bod mt-[25%] text-sm ml-[15%] text-center w-[70%] mb-12">
             Depictions of spring and florals have been present in art for centuries! With the arrival of spring, and blooms beginning to erupt all around us, we were interested in the question, “How can floral and spring imagery, and all its associations and cliches, be new and exciting after so many iterations through time?”. The following quote came to mind to describe this need for something new, “Florals? For spring? Groundbreaking” <br/>Delivered by Meryl Streep in the iconic 2006 movie, The Devil Wears Prada, the quote was the prompt presented to artists for CGAC’s 5th digital exhibition.<br /> <br />It brings an opportunity to reinvent and invigorate the theme of florals and spring; Artists Breann Ritchie, Cleo Peterson, Donica Larade, Helen Tran, Lanni Weingarten, Pegy Korat, and Sarah Zanchetta did just that.  Exploring themes of love, growth, ancestral rituals, transformation, healing, and more, these emerging artists are taking us into their world. A new renaissance of florals!
           </h4>
           

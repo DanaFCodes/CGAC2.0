@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { BsArrowDownShort } from "react-icons/bs";
+
 
 // functions
 export default function Home() {
@@ -15,7 +17,7 @@ export default function Home() {
           <section id="galleryPortal" className="relative overflow-visible	">
             <div className='relative overflow-visible	'>
               <Image className="opacity-100 	"
-              src="/longLanding333.png"
+              // src="/landing1.png"
               width={2200}
               height={500}
               alt='Illustration of garden gate'
