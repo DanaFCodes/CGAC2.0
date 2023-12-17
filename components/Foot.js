@@ -84,9 +84,9 @@ const sendEmail = (e) => {
           />
 
 <form ref={form} onSubmit={sendEmail} className="flex flex-col">
-      <input  id='clearInput1'  type="text" placeholder="name" name="user_name" className="bg-apricot mb-5 mt-3 rounded-xl h-10 pl-5"/>
-      <input id='clearInput2'  type="email" placeholder="email address" name="user_email" className="bg-apricot mb-5 rounded-xl h-10 pl-5"/>
-      <textarea  id='clearInput3' name="message" placeholder="How can CGAC support you best? ☀️🌱" className="bg-apricot mb-5 rounded-xl h-20 pt-2 pl-5 pr-2" />
+      <input  id='clearInput1'  type="text" placeholder="name" name="user_name" className="bg-frenchGrey placeholder-gray-500 mb-5 mt-3 rounded-xl h-10 pl-5"/>
+      <input id='clearInput2'  type="email" placeholder="email address" name="user_email" className="bg-frenchGrey placeholder-gray-500 mb-5 rounded-xl h-10 pl-5"/>
+      <textarea  id='clearInput3' name="message" placeholder="How can CGAC support you best? ☀️🌱" className="bg-frenchGrey placeholder-gray-500 mb-5 rounded-xl h-20 pt-2 pl-5 pr-2" />
       <button   type="submit" value="Send" id='formButton popup submitp' className="btn btn-animation font-bod mt-5 ">
       <p id="submitp" >submit</p>
       </button> 
@@ -129,7 +129,7 @@ const sendEmail = (e) => {
       <div className="relative">
         <Image
         className="-mt-5 z-0 absolute bottom-0 left-[-10%]"
-        src={'/mossFoot.png'}
+        src={'/apricotFootHill.png'}
         width={5500}
         height={1000}
         alt="grass footer"

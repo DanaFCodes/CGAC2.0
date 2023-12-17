@@ -24,72 +24,6 @@ section#mainGall {
   display: block;
   min-height: 100%;
 }
-#scroll-d {
-  left: 20%;
-  top:13%;
-  color: #1a9797;
-  font-size: 8em;
-  font-weight: 200;
-  z-index: 100;
-  transform: translateY(4rem);
-  animation: scroll .5s ease-in alternate infinite;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(10px);
-  }
-}
-
-.popup .overlay {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0,0,0,0.7);
-  z-index: 50;
-  display: none;
-}
-.popup .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  background: #fff;
-  width: 450px;
-  height: 220px;
-  z-index: 50;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.popup .close-btn {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 30px;
-  height: 30px;
-  background: #222;
-  color: #fff;
-  font-size: 25px;
-  text-align: center;
-  border-radius: 50%;
-
-}
-
-.popup.active .overlay {
-  display: block;
-}
-
-.popup.active .content {
-  transition: all 300ms ease-in-out;
-  transform: translate(-50%, -50%) scale(0);
-}
-
 
 
 .insta img {
@@ -110,25 +44,20 @@ width: 100%;
   display: flex;
   justify-content: space-between;
 }
-#gatDivDiv{
-  width: 100%; 
-  max-width: 400px;
-  min-width: 400px;
-}
-#gateDiv {
-  width: calc(50% - 400px); 
-  /* max-width: 800px; */
-  height: calc(100% - 300px); 
-  background-color: red;
-  position: absolute;
-  left: 14%;
-  bottom: 15%;
-  z-index: 50;
-}
+
 
 /* submit button */
 .btn {
   background: #c1c3d6;
+  border: none;
+  color: white;
+  padding: .35rem 2rem;
+  position: relative;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.btn2 {
+  background: #fbb64f;
   border: none;
   color: white;
   padding: .35rem 2rem;
@@ -171,3 +100,47 @@ width: 100%;
   outline-offset: -6px;
 }
 /* submit button ends */
+
+
+
+
+
+
+
+#modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+#modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+#close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

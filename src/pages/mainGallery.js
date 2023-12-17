@@ -56,21 +56,28 @@ function MainGallery() {
         </header>
 
         <main style={{padding: '5% 5% 2% 5%'}}>
-          <h4 className="font-bod mt-[25%] text-sm ml-[15%] text-center w-[70%] mb-12">
+          <div className='flex relative'>
+          <h4 className="font-bod mt-[25%] text-sm ml-[10%] text-center w-[50%] mb-12">
             Depictions of spring and florals have been present in art for centuries! With the arrival of spring, and blooms beginning to erupt all around us, we were interested in the question, “How can floral and spring imagery, and all its associations and cliches, be new and exciting after so many iterations through time?”. The following quote came to mind to describe this need for something new, “Florals? For spring? Groundbreaking” <br/>Delivered by Meryl Streep in the iconic 2006 movie, The Devil Wears Prada, the quote was the prompt presented to artists for CGAC’s 5th digital exhibition.<br /> <br />It brings an opportunity to reinvent and invigorate the theme of florals and spring; Artists Breann Ritchie, Cleo Peterson, Donica Larade, Helen Tran, Lanni Weingarten, Pegy Korat, and Sarah Zanchetta did just that.  Exploring themes of love, growth, ancestral rituals, transformation, healing, and more, these emerging artists are taking us into their world. A new renaissance of florals!
+            <br/><br/><br/><br/>click sound wave to listen, press again to stop
           </h4>
           
-          <div className='flex '>
-          <div className='relative text-center w-[100%]'>
-          <h2 className="font-bod text-sm ml-[30%] mb-10 mt-16">click sound wave to listen, press again to stop</h2>
-          </div>
-          <Image className="sm:ml-[-95%] lg:ml-[-55%] sm:mt-[-27%] lg:mt-[-5%] sm:scale-50 lg:scale-75 lg:block md:block sm:block"
+          <div className='absolute top-3/4 mt-16 left-1/2 text-center w-[100%]'>
+          {/* <Image className="sm:scale-50 lg:scale-75 lg:block md:block sm:block"
             src={'/yellaArra.png'}
             height={20}
-            width={200}
-            alt='image of sound wave'
+            width={150}
+            alt='yellow arrow pointing to sound wave'
+            /> */}
+             <Image className="sm:scale-50 lg:scale-75 lg:block md:block sm:block"
+            src={'/yellowarrow2.png'}
+            height={20}
+            width={150}
+            alt='yellow arrow pointing to sound wave'
             />
           </div>
+          </div>
+
           <div className='flex lg:mt-[-1%]'>
             <Image className='sm:hidden lg:block'
             src={'/ear.png'}
@@ -113,11 +120,11 @@ function MainGallery() {
             
             <div onClick={() => setArtistOpen(!artistOpen)} className="flex items-center justify-center ">
               <button onClick={artistStatement} className="btn btn-animation font-bod mt-5 mb-16 hover:content-['']">
-                <p id='artistButt' className="" data-hover=''>expand artist statement</p>
+                <p id='artistButt'>expand artist statement</p>
               </button> 
             </div>
             <div className='hidden' id='artistStatement'>
-              <p className='mt-[-2%] text-center ' >audio clip here</p>
+              <p className='mt-[-2%] text-center' >audio clip here</p>
               <p id='artistState' className='ml-[25%] text-center w-[50%] mb-12'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non euismod leo. Donec non nunc magna. Aliquam porta porta justo eu facilisis. Etiam id venenatis tellus. Maecenas dictum justo et nisi placerat, non eleifend ex tristique. Nulla erat augue, pharetra id volutpat viverra, pellentesque nec nunc. Fusce a varius arcu.
 
 In feugiat pellentesque nisl eget consequat. Sed finibus molestie mauris, vitae pharetra ante tempor eget. Fusce quis nisi at turpis pulvinar aliquam. Nullam tempor, diam pulvinar tempus vestibulum, enim orci euismod ipsum, sed lacinia enim tellus quis nunc. Donec euismod odio ac leo blandit fermentum. Nam dapibus, augue quis ullamcorper.</p>
@@ -136,7 +143,7 @@ In feugiat pellentesque nisl eget consequat. Sed finibus molestie mauris, vitae 
             </div>
             <div onClick={() => setArtistOpen(!artistOpen)} className="flex items-center justify-center ">
               <button onClick={artistStatement2} className="btn btn-animation font-bod mt-5 mb-16 hover:content-['']">
-                <p id='artistButt2' className="" data-hover=''>expand artist statement</p>
+                <p id='artistButt2'>expand artist statement</p>
               </button> 
             </div>
             <div className='hidden' id='artistStatement2'>
@@ -159,11 +166,11 @@ In feugiat pellentesque nisl eget consequat. Sed finibus molestie mauris, vitae 
             </div>
             <div onClick={() => setArtistOpen(!artistOpen)} className="flex items-center justify-center ">
               <button onClick={artistStatement3} className="btn btn-animation font-bod mt-5 mb-16 hover:content-['']">
-                <p id='artistButt3' className="" data-hover=''>expand artist statement</p>
+                <p id='artistButt3'>expand artist statement</p>
               </button> 
             </div>
             <div className='hidden' id='artistStatement3'>
-              <p className='mt-[-2%] text-center ' >audio clip here</p>
+              <p className='mt-[-2%] text-center'>audio clip here</p>
               <p id='artistState' className='ml-[25%] text-center w-[50%] mb-12'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non euismod leo. Donec non nunc magna. Aliquam porta porta justo eu facilisis. Etiam id venenatis tellus. Maecenas dictum justo et nisi placerat, non eleifend ex tristique. Nulla erat augue, pharetra id volutpat viverra, pellentesque nec nunc. Fusce a varius arcu.
 
 In feugiat pellentesque nisl eget consequat. Sed finibus molestie mauris, vitae pharetra ante tempor eget. Fusce quis nisi at turpis pulvinar aliquam. Nullam tempor, diam pulvinar tempus vestibulum, enim orci euismod ipsum, sed lacinia enim tellus quis nunc. Donec euismod odio ac leo blandit fermentum. Nam dapibus, augue quis ullamcorper.</p>

@@ -75,7 +75,7 @@ function Nav() {
         id='slideOut'
         className={
           menuOpen
-          ? "absolute z-10 top-0 md:hidden w-screen bg-olive p-6 mb-10 content-center"
+          ? "absolute z-10 top-0 md:hidden w-screen bg-princeOrangeOG p-6 mb-10 content-center"
           : "left[-100%] absolute"
         }
         >
@@ -89,29 +89,39 @@ function Nav() {
           </div>
         </div>
         <div className={menuOpen ? "flex float-left" : "hidden"}>
-          <ul className='flex w-100 text-center sm:gap-3 bg-olive'>
+          <ul className='flex w-100 text-center sm:gap-9 '>
             <Link href={"/MainGallery"}>
-              <li className="hover:text-princeOrangeOG text-frenchGrey sm:text-xs mr-1">Main Gallery</li>
+              <li className="hover:text-olive text-olive2 sm:text-xs mr-1">Main Gallery</li>
             </Link>
             <Link href={"/Calendar"}>
-              <li className="hover:text-princeOrange text-frenchGrey sm:text-xs ">Calendar</li>
+              <li className="hover:text-olive text-olive2 sm:text-xs ">Calendar</li>
             </Link>
             <Link href="/">
-            <Image className='absolute bottom-10 left-36'
-            src="/logo.png"
+              <li>
+            <Image className='mt-[-20%] left-36 hover:opacity-0'
+            src="/logoMossHR.png"
             width={50}
             height={50}
             alt='CGAC logo'
             />
+              </li>
+              <li>
+            <Image className='mt-[-48%] left-36 opacity-0 hover:opacity-100'
+            src="/logoOliveHR.png"
+            width={50}
+            height={50}
+            alt='CGAC logo'
+            />
+              </li>
             </Link>
             <Link href={"/Market"}>
-              <li className="hover:text-princeOrange text-frenchGrey sm:text-xs ml-[-10%]">Marketplace</li>
+              <li className="hover:text-olive text-olive2 sm:text-xs ml-[-10%]">Marketplace</li>
             </Link>
             {/* <Link href={"/archive"}>
               <li className="hover:text-princeOrange text-frenchGrey">Archive</li>
             </Link> */}
             <Link href={"/AboutUs"}>
-              <li className="hover:text-princeOrange text-frenchGrey sm:text-xs">About us</li>
+              <li className="hover:text-olive text-olive2 sm:text-xs">About us</li>
             </Link>
           {/* <div className="flex gap-2 py-1">
             <AiFillInstagram />
