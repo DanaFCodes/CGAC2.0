@@ -1,11 +1,12 @@
 {
   "name": "cgac2point0",
+  "homepage": "https://cgac.ca",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {
@@ -26,6 +27,8 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.48.1",
     "react-icons": "^4.8.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "tailwindcss": "3.3.2",
     "tailwindcss-animation-delay": "^1.2.0"
   }

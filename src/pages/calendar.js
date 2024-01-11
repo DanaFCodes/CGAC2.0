@@ -5,7 +5,7 @@ import Foot2 from "../../components/Foot2";
 function Calendar() {
   return (
     <>
-    <section className='' style={{'background-image': "url('/calendarBG.png')", 'minWidth': '100vw', 'backgroundSize': 'contain', 'backgroundRepeat': 'no-repeat'}}>
+    <section className='' style={{'background-image': "url('/calendarBGG.png')", 'minWidth': '100vw', 'backgroundSize': 'contain', 'backgroundRepeat': 'no-repeat'}}>
       <header className="">
         <section className="">
           <Nav />

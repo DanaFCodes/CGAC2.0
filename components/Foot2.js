@@ -129,7 +129,7 @@ const sendEmail = (e) => {
       <div className="relative">
         <Image
         className="-mt-5 z-0 absolute bottom-0 left-[-10%]"
-        src={'/mossFoot.png'}
+        src={'/whiteFooterHill.png'}
         width={5500}
         height={1000}
         alt="grass footer"

@@ -6,7 +6,6 @@ import { AiOutlineClose } from "react-icons/ai";
 import Image from 'next/image';
 
 function Nav() {
-  // functions
   const [menuOpen, setMenuOpen] = useState(false);
   const handleNav = () => {
     setMenuOpen(!menuOpen)
@@ -22,9 +21,6 @@ function Nav() {
     <nav className="font-body ">
       <div id="" className="justify-between items-center flex">
           <ul style={{padding: '5% 5% 2% 5%'}} className="z-10 md:visible sm:invisible justify-center flex w-screen text-center md:gap-8 lg:gap-12 sm:text-sm md:text-md lg:text-lg text-persimmon">
-            {/* <Link href={"/"}>
-              <li className="hover:text-olive">Home</li>
-            </Link> */}
             <Link href={"/MainGallery"}>
               <li className="hover:text-princeOrangeOG  mt-1 lg:text-2xl ">Main Gallery</li>
             </Link>
@@ -75,7 +71,7 @@ function Nav() {
         id='slideOut'
         className={
           menuOpen
-          ? "absolute z-10 top-0 md:hidden w-screen bg-princeOrangeOG p-6 mb-10 content-center"
+          ? "absolute z-10 top-0 md:hidden w-screen p-6 mb-10 content-center"
           : "left[-100%] absolute"
         }
         >

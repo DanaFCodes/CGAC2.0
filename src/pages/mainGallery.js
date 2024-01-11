@@ -63,12 +63,6 @@ function MainGallery() {
           </h4>
           
           <div className='absolute top-3/4 mt-16 left-1/2 text-center w-[100%]'>
-          {/* <Image className="sm:scale-50 lg:scale-75 lg:block md:block sm:block"
-            src={'/yellaArra.png'}
-            height={20}
-            width={150}
-            alt='yellow arrow pointing to sound wave'
-            /> */}
              <Image className="sm:scale-50 lg:scale-75 lg:block md:block sm:block"
             src={'/yellowarrow2.png'}
             height={20}
